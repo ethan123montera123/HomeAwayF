@@ -1,0 +1,36 @@
+
+<section class="bg-gray-100 py-8">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">
+      Find Your Perfect Home
+    </h1>
+    <div class="flex justify-center mb-8">
+      <input #search class="w-1/2 p-2 border border-gray-300 rounded-l-md" placeholder="Search for listings..." type="text"/>
+      <button class="bg-blue-500 text-white p-2 rounded-r-md" (click)="onSearch(search.value)">
+        Search
+      </button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <ng-container *ngFor="let item of listing;">
+        <!-- Listing Item -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+          <img alt="A beautiful modern house with a large garden and a swimming pool" height="400" src="https://storage.googleapis.com/a1aa/image/rlft6B58GDziQicu1UM3GLZfzjUSse6JeUT1GHjidt2k4FnPB.jpg" width="600"/>
+          <div class="p-4">
+            <h2 class="text-xl font-bold text-gray-800">
+              {{item.title}}
+            </h2>
+            <p class="text-gray-600">
+              {{item.type}}<br>
+              {{item.description}}
+            </p>
+            <p class="text-gray-800 font-bold">
+              {{item.pricePerNight | currency: 'PHP'}}
+            </p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+

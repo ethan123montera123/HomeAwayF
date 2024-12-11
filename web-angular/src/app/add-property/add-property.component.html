@@ -1,0 +1,60 @@
+
+<section class="bg-gray-100 py-8">
+  <div class="container mx-auto px-4">
+    <div class="max-w-md mx-auto bg-white shadow-md rounded-md p-6">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6">
+        Add Property
+      </h2>
+      <form
+      [formGroup]="form"
+      fxLayout="row wrap"
+      id="form"
+      (ngSubmit)="onSubmit()">
+        <div class="mb-4">
+          <label class="block text-gray-700" for="title">
+            Title
+          </label>
+          <input class="w-full p-2 border border-gray-300 rounded-md" formControlName="title" id="title" type="text"/>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700" for="description">
+            Description
+          </label>
+          <textarea class="w-full p-2 border border-gray-300 rounded-md" formControlName="description" id="description"></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700" for="description">
+            Address
+          </label>
+          <textarea class="w-full p-2 border border-gray-300 rounded-md" formControlName="address" id="address"></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700" for="price">
+            Price
+          </label>
+          <input class="w-full p-2 border border-gray-300 rounded-md" formControlName="pricePerNight" id="price" type="number"/>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700" for="description">
+            Type
+          </label>
+          <!-- <textarea class="w-full p-2 border border-gray-300 rounded-md" formControlName="type" id="Type"></textarea> -->
+          <select formControlName="type">
+            <option value="APARTMENT">Apartment</option>
+            <option value="HOUSE">House</option>
+            <option value="ROOM">Room</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700" for="price">
+            Bed Count
+          </label>
+          <input class="w-full p-2 border border-gray-300 rounded-md" formControlName="bedCount" id="bedCount" type="number"/>
+        </div>
+        <button class="w-full bg-blue-500 text-white p-2 rounded-md" type="submit">
+          Add Property
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
