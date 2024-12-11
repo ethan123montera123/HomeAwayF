@@ -1,0 +1,48 @@
+|-- .gitattributes
+|-- .gitignore
+|-- .mvn
+    |-- wrapper
+        |-- maven-wrapper.properties
+|-- HELP.md
+|-- mvnw
+|-- mvnw.cmd
+|-- pom.xml
+|-- src
+    |-- main
+        |-- java
+            |-- com
+                |-- propertylisting
+                    |-- app
+                        |-- config
+                            |-- SecurityConfig.java
+                        |-- controller
+                            |-- AuthController.java
+                            |-- BookingController.java
+                            |-- PropertyController.java
+                            |-- RentController.java
+                        |-- dto
+                            |-- Response.java
+                        |-- model
+                            |-- Booking.java
+                            |-- Property.java
+                            |-- Rent.java
+                            |-- User.java
+                        |-- PropertylistingApplication.java
+                        |-- repository
+                            |-- BookingRepository.java
+                            |-- PropertyRepository.java
+                            |-- RentRepository.java
+                            |-- UserRepository.java
+                        |-- service
+                            |-- AuthService.java
+                            |-- BookingService.java
+                            |-- PropertyService.java
+                            |-- RentService.java
+        |-- resources
+            |-- application.properties
+    |-- test
+        |-- java
+            |-- com
+                |-- propertylisting
+                    |-- app
+                        |-- PropertylistingApplicationTests.java
