@@ -1,0 +1,59 @@
+|-- .angular
+|-- .editorconfig
+|-- angular.json
+|-- package-lock.json
+|-- package.json
+|-- src
+    |-- app
+        |-- add-property
+            |-- add-property.component.html
+            |-- add-property.component.scss
+            |-- add-property.component.spec.ts
+            |-- add-property.component.ts
+        |-- app-routing.module.ts
+        |-- app.component.html
+        |-- app.component.scss
+        |-- app.component.spec.ts
+        |-- app.component.ts
+        |-- app.module.ts
+        |-- home
+            |-- home.component.html
+            |-- home.component.scss
+            |-- home.component.spec.ts
+            |-- home.component.ts
+        |-- login
+            |-- login.component.html
+            |-- login.component.scss
+            |-- login.component.spec.ts
+            |-- login.component.ts
+        |-- model.ts
+        |-- register
+            |-- register.component.html
+            |-- register.component.scss
+            |-- register.component.spec.ts
+            |-- register.component.ts
+        |-- service
+            |-- master.service.spec.ts
+            |-- master.service.ts
+    |-- assets
+        |-- .gitkeep
+        |-- css
+            |-- styles.css
+        |-- fonts
+            |-- AirbnbCereal_W_Bd.otf
+            |-- AirbnbCereal_W_Bk.otf
+            |-- AirbnbCereal_W_Blk.otf
+            |-- AirbnbCereal_W_Lt.otf
+            |-- AirbnbCereal_W_Md.otf
+            |-- AirbnbCereal_W_XBd.otf
+    |-- environments
+        |-- environment.development.ts
+        |-- environment.ts
+    |-- favicon.ico
+    |-- index.html
+    |-- main.ts
+    |-- styles.scss
+|-- tailwind.config.js
+|-- tsconfig.app.json
+|-- tsconfig.json
+|-- tsconfig.spec.json
